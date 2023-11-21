@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import "./App.css"
+import min from "./Assets/Min.png"
+import Hours from "./Assets/Hours.png"
+import Sec from "./Assets/Sec.png"
+import Minutes from "./Assets/Minutes.png"
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='mainContainer'>
+        <img src={min} className='minStyle' />
+        <img src={Sec} className='secStyle'/>
+        <img src={Hours} className='hoursStyle'/>
+        <img src={Minutes} className='minutseStyle'/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
